@@ -16,3 +16,6 @@ Note that all Matlab functions and source code files are under `matlab_source_co
 Take the splice junction dataset analyzed in the paper as an example. Run the function `splice_csp(K, alpha0)` to analyze the splice junction data using the proposed method. Then use `splice_processing.m` and `python_corels/splice.py` to perform downstream classification using the rule-list classifier. Then run `splice_csp_figure.m` to generate figures to evaluate and visualize the data analysis results.
 
 
+### Generate some simple data and then run the proposed method on it:
+Matlab script `demo_run.m` is a simple, readable, and short script which first generates a simulated dataset `Y_data.csv`, and then runs the proposed method on it using the `bayes_pyramid('Y_data.csv')` function and returns the `saved_file` containing all the estimation results. Finally, the last line of the script `load(saved_file)` loads all the estimation results into the current Matlab workspace.
+
